@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Update="appsettings.Development.json">
+        <DependentUpon>appsettings.json</DependentUpon>
+      </Content>
+    </ItemGroup>
+    
+    <ItemGroup>
+        <Using Include="WebApplication1.Common.Attributes" />
+        <Using Include="WebApplication1.Models" />
+        <Using Include="WebApplication1.Common.Interfaces" />
+        <Using Include="WebApplication1.Common.Constants" />
+    </ItemGroup>
+
+</Project>
